@@ -8,7 +8,7 @@
 ---
 
 ## Developer
-**SK 
+**SK SAKIB 👿**
 
 ---
 
@@ -102,4 +102,4 @@ SK_WEB_target_timestamp/
 
 ---
 
-**SK WEB v1.0** — Developed by SK
+**SK WEB v1.0** — Developed by SK SAKIB

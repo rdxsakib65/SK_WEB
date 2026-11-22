@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # ╔══════════════════════════════════════════════════════════════════════╗
 # ║          SK WEB v1.0 — Ultimate Deep Crawler & Recon Engine         ║
-# ║          Author : SK SAKIB   [ SK WEB ]                            ║
+# ║          Author : SK SAKIB 👿  [ SK WEB ]                            ║
 # ║          Mode   : Multi-thread · Full Recon · HTML Report            ║
 # ╚══════════════════════════════════════════════════════════════════════╝
 
@@ -27,15 +27,15 @@ def banner():
     os.system("clear")
     print(f"""
 {G1}  ███████╗██╗  ██╗    ██╗    ██╗███████╗██████╗ {RS}
-{G1}  ██╔════╝██║ ██╔╝    ██║    ██║██╔════╝██╔══██╗{RS}
-{G2}  ███████╗█████╔╝     ██║ █╗ ██║█████╗  ██████╔╝{RS}
-{G2}  ╚════██║██╔═██╗     ██║███╗██║██╔══╝  ██╔══██╗{RS}
-{G3}  ███████║██║  ██╗    ╚███╔███╔╝███████╗██████╔╝{RS}
+{G1}  ██╔════╝██║  ██║    ██║    ██║██╔════╝██╔══██╗{RS}
+{G2}  █████╗  ███████║    ██║ █╗ ██║█████╗  ██████╔╝{RS}
+{G2}  ██╔══╝  ██╔══██║    ██║███╗██║██╔══╝  ██╔══██╗{RS}
+{G3}  ███████╗██║  ██║    ╚███╔███╔╝███████╗██████╔╝{RS}
 {G3}  ╚══════╝╚═╝  ╚═╝     ╚══╝╚══╝ ╚══════╝╚═════╝ {RS}
 
 {G2}  ╔══════════════════════════════════════════════════════════╗{RS}
 {G2}  ║  {W}Tool    : {G1}SK WEB v1.0 — Ultimate Recon Engine     {G2}║{RS}
-{G2}  ║  {W}Author  : {G1}SK SAKIB 👿                             {G2}║{RS}
+{G2}  ║  {W}Author  : {G1}SK Munna 👿                             {G2}║{RS}
 {G2}  ║  {W}Modules : {G1}Crawl·Recon·JS·WAF·SSL·Report·Threads  {G2}║{RS}
 {G2}  ╚══════════════════════════════════════════════════════════╝{RS}
 """)
@@ -727,7 +727,7 @@ def generate_html_report(folder, manifest):
     score=100
     if not waf: score-=10
     if secrets: score-=min(len(secrets)*5,30)
-    if hidden: score-=min(len(h for h in hidden if h["status"]==200)*5,20)
+    if hidden: score-=min(len([h for h in hidden if h["status"]==200])*5,20)
     score=max(score,0)
     score_color="#27ae60" if score>=70 else "#e67e22" if score>=40 else "#e74c3c"
 
