@@ -1,0 +1,27 @@
+═══════════════════════════════════════════
+  SK WEB v1.0 — Quick Setup Guide
+  Developer: EH Munna 👿
+═══════════════════════════════════════════
+
+REQUIREMENTS:
+  - Android phone with Termux
+  - Python 3.7+ (installed via apt)
+  - Internet connection
+  - No root required
+
+INSTALL:
+  apt update -y && apt upgrade -y
+  apt install python git -y
+  termux-setup-storage
+  git clone https://github.com/rdxsakib65/SK_WEB.git
+  cd SK-WEB
+  python sk_web.py
+
+SAVE OUTPUT:
+  cp -r SK_WEB_target_* ~/storage/shared
+
+VIEW REPORT:
+  Open report.html in any browser
+  (Chrome/Firefox recommended)
+
+═══════════════════════════════════════════

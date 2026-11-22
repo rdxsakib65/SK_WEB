@@ -1,0 +1,7 @@
+# SK WEB v1.0 — No external dependencies required
+# Pure Python 3.x standard library only
+# Python >= 3.7 required
+
+# stdlib modules used (pre-installed):
+# sys, os, re, json, time, gzip, hashlib, socket, ssl
+# threading, urllib, html, collections, concurrent.futures, datetime
