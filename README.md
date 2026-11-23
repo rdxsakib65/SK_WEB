@@ -41,7 +41,9 @@ apt install python -y
 apt install git -y
 termux-setup-storage
 git clone https://github.com/rdxsakib65/SK_WEB.git
-cd SK-WEB
+ls
+cd SK_WEB
+ls
 python sk_web.py
 ```
 
@@ -55,7 +57,8 @@ After scan is done, open a new terminal:
 
 ```bash
 ls
-cd SK-WEB
+cdWEB
+-WEB
 ls
 cp -r SK_WEB_targetname_timestamp ~/storage/shared
 ```
